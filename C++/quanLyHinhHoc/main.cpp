@@ -2,10 +2,10 @@
 
 class Shape {
 public:
-    // Phương thức ảo pure virtual để tính diện tích
+    //  virtual để tính diện tích
     virtual double calculateArea() const = 0;
 
-    // Phương thức ảo pure virtual để tính chu vi
+    //  virtual để tính chu vi
     virtual double calculatePerimeter() const = 0;
 };
 
@@ -49,12 +49,9 @@ public:
 };
 
 int main() {
-    // Tạo đối tượng hình tròn và hiển thị diện tích và chu vi
     Circle circle(5);
     std::cout << "dien tich hinh tron: " << circle.calculateArea() << std::endl;
     std::cout << "chu vi hinh tron: " << circle.calculatePerimeter() << std::endl;
-
-    // Tạo đối tượng hình chữ nhật và hiển thị diện tích và chu vi
     Rectangle rectangle(4, 6);
     std::cout << "dien tich hinh chu nhat: " << rectangle.calculateArea() << std::endl;
     std::cout << "chu vi hinh chu nhat: " << rectangle.calculatePerimeter() << std::endl;
